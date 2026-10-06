@@ -1,11 +1,11 @@
 ---
 name: website-bauen
-description: "Führt Schritt für Schritt durch die komplette Erstellung einer Website, von Marke und Zielgruppe über Recherche, Texte, Design-Richtung, Bau, Prüfung, SEO und GEO bis zum Livegang und der Beobachtung danach, auf Wunsch mit Prüfung auf Cookie-Einwilligung und AGB. Funktioniert auch für Gründer ohne Namen und Logo. Nutzen, wenn jemand eine Website, Landingpage oder Firmenseite neu bauen oder komplett überarbeiten will, nach einem Website-Prozess fragt, /website-bauen aufruft oder an einer laufenden Website-Phase weitermachen will (Datei WEBSITE-STATUS.md im Projekt)."
-argument-hint: "[start | weiter | phase <0-9> | status]"
+description: "Führt Schritt für Schritt durch die komplette Erstellung einer Website, von Marke und Zielgruppe über Recherche, Texte, Design-Richtung, Bau, Prüfung, SEO und GEO bis zum Livegang mit Prüfung auf Cookie-Einwilligung und AGB und der Beobachtung danach. Funktioniert auch für Gründer ohne Namen und Logo. Nutzen, wenn jemand eine Website, Landingpage oder Firmenseite neu bauen oder komplett überarbeiten will, nach einem Website-Prozess fragt, /website-bauen aufruft oder an einer laufenden Website-Phase weitermachen will (Datei WEBSITE-STATUS.md im Projekt)."
+argument-hint: "[start | weiter | phase <0-8> | status]"
 user-invocable: true
 ---
 
-# Website bauen: der ganze Prozess in neun Phasen und einem Zusatz
+# Website bauen: der ganze Prozess in neun Phasen
 
 Dieser Skill führt eine Person durch den Bau ihrer Website. Er läuft in Claude Code, Codex und jedem anderen Agenten, der Skills im SKILL.md-Format liest.
 
@@ -22,11 +22,10 @@ Du bist dabei Projektleiter und Handwerker zugleich. Die Person entscheidet, du 
 | 4 | Design-Richtung | eine gewählte, eigene visuelle Welt als Richtungsvertrag | [phasen/4-design-richtung.md](phasen/4-design-richtung.md) |
 | 5 | Bauen | fertige Seite lokal, mit strukturierten Daten | [phasen/5-bauen.md](phasen/5-bauen.md) |
 | 6 | Prüfen und Feinschliff | unabhängige Abnahme, Regler-Panel, `DESIGN.md` | [phasen/6-pruefen.md](phasen/6-pruefen.md) |
-| 7 | Livegang | SEO- und GEO-Technik, Rechtstexte, Formular, Seite online | [phasen/7-livegang.md](phasen/7-livegang.md) |
+| 7 | Livegang | SEO- und GEO-Technik, Prüfung auf Cookies und AGB, Rechtstexte, Formular, Seite online | [phasen/7-livegang.md](phasen/7-livegang.md) |
 | 8 | Danach | Search Console, Profile abgleichen, Sichtbarkeit nachmessen | [phasen/8-danach.md](phasen/8-danach.md) |
-| 9 | Zusatz: Cookies und AGB | Prüfung, ob die Seite Cookie-Einwilligung oder AGB braucht, falls ja Entwurf und Umsetzung | [phasen/9-cookies-agb.md](phasen/9-cookies-agb.md) |
 
-Die Reihenfolge hat Gründe. Texte kommen vor dem Design, weil eine Design-Richtung ohne echten Inhalt zu Platzhalter-Optik führt. Die Recherche kommt vor den Texten, weil Keywords und Wettbewerber bestimmen, was in den Überschriften steht. Die Marke kommt vor allem anderen, weil falsche Farben jede spätere Arbeit wertlos machen. Werkzeuge mit Konto (DataForSEO, Hosting) werden erst in der Phase eingerichtet, die sie braucht, damit der Anfang schnell geht. Phase 9 ist kein Standardschritt: Eine Seite ohne Tracking und ohne Verkauf braucht meist weder Cookie-Banner noch AGB, die Phase prüft das nur.
+Die Reihenfolge hat Gründe. Texte kommen vor dem Design, weil eine Design-Richtung ohne echten Inhalt zu Platzhalter-Optik führt. Die Recherche kommt vor den Texten, weil Keywords und Wettbewerber bestimmen, was in den Überschriften steht. Die Marke kommt vor allem anderen, weil falsche Farben jede spätere Arbeit wertlos machen. Werkzeuge mit Konto (DataForSEO, Hosting) werden erst in der Phase eingerichtet, die sie braucht, damit der Anfang schnell geht. Cookies und AGB werden in Phase 7 vor dem Upload geprüft, weil eine Seite, die eine Einwilligung oder AGB braucht, sie ab dem ersten Besucher haben muss. Bei einer Seite ohne Tracking und ohne Verkauf ist das in einem Satz erledigt.
 
 ## Ablauf bei jedem Aufruf
 

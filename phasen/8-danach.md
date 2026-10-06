@@ -30,4 +30,4 @@ Ergebnis als Abschnitt „Nachmessung“ in `recherche/keywords-geo.md`.
 - [ ] Profile mit denselben Fakten aktualisiert.
 - [ ] Termin für die Nachmessung in drei bis vier Wochen steht.
 
-Damit ist der Hauptprozess abgeschlossen. Statusdatei auf „Live“ setzen und zum Schluss [Phase 9](9-cookies-agb.md) durchgehen: Sie prüft, ob die Seite eine Cookie-Einwilligung oder AGB braucht.
+Damit ist der Prozess abgeschlossen. Statusdatei auf „Live“ setzen.

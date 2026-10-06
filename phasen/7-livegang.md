@@ -19,7 +19,13 @@ Das Vorschaubild entsteht so: Vorlage in den Ordner `tweak/` kopieren, Texte anp
 
 **Lighthouse** (Handy) laufen lassen: `npx lighthouse@12 http://localhost:8000 --form-factor=mobile --output=html --output-path=lighthouse.html`. Ziel: in allen vier Bereichen über 90.
 
-## 2. Rechtstexte (Deutschland)
+## 2. Cookies und AGB prüfen
+
+Vor den Rechtstexten und vor dem Upload klären, ob die Seite eine Cookie-Einwilligung oder AGB braucht. Braucht sie eine, dann ab dem ersten Besucher, nicht erst nach dem Livegang. Ablauf, Rechtsgrundlagen und Umsetzung stehen in [7-cookies-agb.md](7-cookies-agb.md).
+
+Kurz: lokale Seite messen, Code durchsuchen, die Person fragen, was noch dazukommen soll. Ohne Tracking, ohne eingebettete Inhalte von Dritten und ohne Verkauf ist nichts nötig, dann reicht ein Satz in der Statusdatei. Das Ergebnis fließt in die Datenschutzerklärung.
+
+## 3. Rechtstexte (Deutschland)
 
 Impressum und Datenschutzerklärung sind Pflicht. Wichtig ist, dass sie zur echten Seite passen:
 - Generator nutzen (zum Beispiel e-recht24 oder Datenschutz-Generator.de) und genau die Dienste angeben, die die Seite wirklich nutzt.
@@ -30,7 +36,7 @@ Impressum und Datenschutzerklärung sind Pflicht. Wichtig ist, dass sie zur echt
 
 Sag der Person deutlich: Das ersetzt keine Rechtsberatung. Bei Änderungen an der Seite die Texte neu erzeugen.
 
-## 3. Formular anschließen
+## 4. Formular anschließen
 
 Das Formular-Skript [../vorlagen/formular.js](../vorlagen/formular.js) schickt die Anfrage als JSON an die Adresse in `data-endpoint`. Wohin, entscheidet die Person. Mit Empfehlung fragen:
 
@@ -68,12 +74,12 @@ Empfehlung für Einsteiger mit Webspace: das PHP-Skript. Wer schon n8n oder Make
 
 Bei allen Wegen gilt: Eine echte Testanfrage sendet die Person selbst oder gibt ausdrücklich das OK dafür.
 
-## 4. Upload vorbereiten
+## 5. Upload vorbereiten
 
 - **Build-Skript** [../vorlagen/build.py](../vorlagen/build.py) nach `deploy/build.py` kopieren und die Dateiliste anpassen. Es kopiert genau die Dateien, die live gehen, nach `dist/` und packt `dist.zip`. So landen nie Arbeitsdateien (Recherche, Panel, Entwürfe) auf dem Server.
 - **`.htaccess`** für Apache- und LiteSpeed-Server (Hostinger, IONOS, all-inkl): [../vorlagen/.htaccess](../vorlagen/.htaccess). Erzwingt HTTPS, leitet `www` auf die Adresse ohne `www` um (sonst passt die CORS-Freigabe des Formulars nicht), sperrt lokale Ordner, setzt Caching. Bei Netlify oder Vercel stattdessen deren Konfigurationsdatei.
 
-## 5. Online stellen
+## 6. Online stellen
 
 **Erst nach ausdrücklichem OK der Person.**
 
@@ -94,12 +100,13 @@ Falls der Hosting-MCP noch nicht verbunden ist (prüfen mit `/mcp`), jetzt einri
 
 `dist.zip` im Dateimanager des Hosters in den Web-Ordner (meist `public_html`) hochladen und entpacken. Domain im Hoster-Panel mit dem Webspace verbinden, SSL-Zertifikat aktivieren.
 
-## 6. Live prüfen
+## 7. Live prüfen
 
 - HTTPS funktioniert, `http://` und `www.` leiten auf die richtige Adresse um.
 - Alle Dateien liefern Status 200 (`curl -I` auf Seite, CSS, JS, Schriften, Bilder, robots.txt, llms.txt, sitemap.xml).
 - Gesperrte Ordner (`/tweak/` usw.) liefern 404.
 - `python werkzeuge/pruefen.py https://domain.de` für Screenshots und Konsole.
+- Cookies und Anfragen an fremde Domains auf der Live-Seite einmal nachmessen. Das Ergebnis muss zu Schritt 2 passen.
 - Strukturierte Daten mit dem Google Rich Results Test prüfen.
 - Vorschaubild mit dem LinkedIn Post Inspector prüfen.
 
@@ -108,6 +115,7 @@ Für spätere Änderungen in der Statusdatei festhalten: Build, Upload, Cache le
 ## Fertig, wenn
 
 - [ ] SEO-Dateien, Vorschaubild, Lighthouse über 90.
+- [ ] Cookies und AGB geprüft, Ergebnis in der Statusdatei, falls nötig vor dem Upload umgesetzt.
 - [ ] Impressum und Datenschutz passen zur echten Seite.
 - [ ] Formular-Ziel eingetragen und mit einer Testanfrage der Person geprüft.
 - [ ] Seite online, Live-Prüfung bestanden.

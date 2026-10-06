@@ -1,8 +1,8 @@
-# Phase 9 (Zusatz): Cookies und AGB prüfen
+# Phase 7, Schritt 2: Cookies und AGB prüfen
 
-Ziel: Es ist geklärt, ob die fertige Seite eine Cookie-Einwilligung oder AGB braucht. Wenn ja, ist beides gemeinsam mit der Person umgesetzt, als erster Entwurf.
+Ziel: Vor dem Upload ist geklärt, ob die Seite eine Cookie-Einwilligung oder AGB braucht. Wenn ja, ist beides gemeinsam mit der Person umgesetzt, als erster Entwurf. Das passiert vor dem Livegang, weil eine Seite, die eine Einwilligung oder AGB braucht, sie ab dem ersten Besucher haben muss.
 
-Das ist kein Standardschritt. Eine Angebotsseite, wie sie dieser Skill baut, also ohne Tracking, ohne eingebettete Inhalte von Dritten, mit selbst gehosteten Schriften und einem Formular an den eigenen Server, braucht meist weder einen Cookie-Banner noch AGB. Dann wird das Ergebnis in einem Satz in der Statusdatei festgehalten, und die Phase ist fertig.
+Meist ist der Schritt schnell erledigt. Eine Angebotsseite, wie sie dieser Skill baut, also ohne Tracking, ohne eingebettete Inhalte von Dritten, mit selbst gehosteten Schriften und einem Formular an den eigenen Server, braucht meist weder einen Cookie-Banner noch AGB. Dann wird das Ergebnis in einem Satz in der Statusdatei festgehalten, und es geht mit Schritt 3 in [7-livegang.md](7-livegang.md) weiter.
 
 Sag der Person zu Beginn deutlich: Das ist keine Rechtsberatung. Alles, was hier entsteht, ist ein erster Entwurf anhand offizieller Quellen. Vor dem Einsatz prüft die Person ihn selbst oder lässt ihn prüfen (Anwalt, IHK, Rechtstexte-Dienst mit Abmahnschutz).
 
@@ -10,7 +10,7 @@ Sag der Person zu Beginn deutlich: Das ist keine Rechtsberatung. Alles, was hier
 
 Erst selbst nachsehen, dann fragen.
 
-1. **Die Live-Seite messen.** Mit Playwright die Seite laden, ohne zu klicken, und festhalten: gesetzte Cookies, Einträge im lokalen Speicher, alle Anfragen an fremde Domains (Schriften, Skripte, Bilder, iframes).
+1. **Die Seite messen.** Mit Playwright die lokale Seite laden (`http://localhost:8000`), ohne zu klicken, und festhalten: gesetzte Cookies, Einträge im lokalen Speicher, alle Anfragen an fremde Domains (Schriften, Skripte, Bilder, iframes).
 2. **Den Code durchsuchen** nach Statistik- und Werbe-Skripten, eingebetteten Videos, Karten, Terminbuchung, Chat-Fenstern, Bezahl-Buttons.
 3. **Die Person fragen**, was noch kommen soll: Statistik, Newsletter, Terminbuchung, Verkauf oder Buchung über die Seite.
 
@@ -70,11 +70,11 @@ Sag der Person auch: Für Verkauf reicht eine statische Seite technisch nicht, d
 
 ## Abnahme
 
-Zeig der Person in wenigen Sätzen: was gemessen wurde, was nötig ist und was nicht, was umgesetzt wurde und was sie noch prüfen lassen sollte. Umsetzungen, die live gehen, nur nach ihrem OK.
+Zeig der Person in wenigen Sätzen: was gemessen wurde, was nötig ist und was nicht, was umgesetzt wurde und was sie noch prüfen lassen sollte. Danach weiter mit Schritt 3 in [7-livegang.md](7-livegang.md). Das Ergebnis fließt in die Datenschutzerklärung.
 
 ## Fertig, wenn
 
-- [ ] Bestandsaufnahme gemacht (Messung der Live-Seite und Fragen an die Person).
+- [ ] Bestandsaufnahme gemacht (Messung der lokalen Seite und Fragen an die Person).
 - [ ] Ergebnis in der Statusdatei: nichts nötig, oder was umgesetzt wurde.
 - [ ] Falls nötig: Einwilligung eingebaut und geprüft, dass vorher nichts lädt, Datenschutzerklärung ergänzt.
 - [ ] Falls nötig: AGB und Pflichtangaben als Entwurf, mit Hinweis zur Prüfung.

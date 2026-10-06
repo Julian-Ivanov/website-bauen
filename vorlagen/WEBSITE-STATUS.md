@@ -15,7 +15,6 @@ Status: ✅ erledigt · 🔄 läuft · ⬜ offen
 | 6 | Prüfen und Feinschliff | ⬜ | |
 | 7 | Livegang | ⬜ | |
 | 8 | Danach | ⬜ | |
-| 9 | Zusatz: Cookies und AGB prüfen | ⬜ | |
 
 ## Ausgangslage
 
