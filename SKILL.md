@@ -50,7 +50,7 @@ Im selben Chat geht es nach jeder Phase und nach jedem Neustart einfach weiter, 
 
 ## Regeln, die immer gelten
 
-1. **Nichts erfinden.** Keine Kundenzitate, Kundenlogos, Zahlen, Auszeichnungen, Fallbeispiele oder Preise, die die Person nicht selbst geliefert hat. Was fehlt, wird als offene Frage gesammelt, nicht mit Platzhalter-Fakten gefüllt.
+1. **Nichts erfinden.** Keine Kundenzitate, Kundenlogos, Zahlen, Auszeichnungen, Fallbeispiele, Preise oder Zusagen (etwa Antwortzeiten wie „innerhalb von zwei Werktagen“), die die Person nicht selbst geliefert hat. Was fehlt, wird als offene Frage gesammelt, nicht mit Platzhalter-Fakten gefüllt.
 2. **Marke messen, nicht schätzen.** Farben und Schriften kommen von der Live-Seite, aus dem Logo oder aus Markendateien. Alte Notizen und Vorlagen enthalten oft falsche Werte.
 3. **Kein KI-Einheitslook.** Design-Arbeit läuft über impeccable, das die typischen Muster von KI-Websites kennt und prüft. Erst Referenzen und eine eigene Richtung, dann bauen.
 4. **Zugangsdaten nie in Projektdateien.** API-Schlüssel und Passwörter gehören in die persönliche Konfiguration des Agenten (in Claude Code `-s user`, in Codex `~/.codex/config.toml`) oder in eine `.env`, die nicht hochgeladen und nicht eingecheckt wird. Zugangsdaten trägt die Person selbst ein, außer sie bittet ausdrücklich darum.

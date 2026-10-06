@@ -23,7 +23,7 @@ Grundsätze:
 - **Keine Drittanbieter-Skripte** ohne Grund. Keine Cookie-Banner nötig, wenn nichts trackt.
 - **Farben, Abstände und Schriftgrößen als CSS-Variablen** auf `:root`. Werte, die die Person später selbst verschieben will (Abstände im Einstieg, Größen, Positionen), als eigene Variablen anlegen. Das braucht das Regler-Panel in Phase 6.
 - **Bilder** als WebP mit JPG-Fallback, mit `width` und `height`, Fotos unterhalb des ersten Bildschirms mit `loading="lazy"`.
-- **Bewegung sparsam** und mit `prefers-reduced-motion` abschaltbar.
+- **Bewegung gezielt** einsetzen (siehe unten) und mit `prefers-reduced-motion` abschaltbar machen.
 - **Mobil zuerst denken.** Die meisten Besucher kommen über das Handy. 16 Pixel Seitenabstand, kein seitliches Scrollen.
 
 ## Reihenfolge
@@ -39,6 +39,21 @@ Grundsätze:
 
 Lokal ansehen: `python -m http.server 8000` im Projektordner, dann `http://localhost:8000`.
 
+## Von Anfang an mit Tiefe bauen
+
+Erste Entwürfe werden fast immer zu weiß, zu flach und zu gleichförmig: jeder Abschnitt auf derselben hellen Fläche, Abläufe als drei gleiche Kästen, Listen als reiner Text, einzelne Abschnitte wirken leer. Die Person muss dann eine ganze Runde mit „mehr Tiefe, mehr Akzente, lebendiger“ nachschieben. Deshalb gilt schon für den ersten Entwurf, immer innerhalb der gewählten Richtung:
+
+- **Abschnitte farblich trennen.** Nicht alles auf Weiß. Mehrere Abschnitte bekommen eine eigene Fläche aus der Palette (dunkel, Markenfarbe, getönter Grund), so dass beim Scrollen ein Rhythmus aus hellen und farbigen Abschnitten entsteht.
+- **Tiefe statt flacher Kästen.** Ebenen, die sich überlappen oder über eine Abschnittskante ragen, Flächen in unterschiedlicher Höhe, große Zahlen oder Formen im Hintergrund, Bilder mit Ausschnitt.
+- **Akzente setzen.** Pro Abschnitt ein Element, das heraussticht: eine Kennzahl, ein Schlüsselsatz, der wichtigste Schritt, der wichtigste Nutzen. Die Akzentfarbe gezielt darauf, nicht überall.
+- **Abläufe als Grafik.** Ein Ablauf in drei Schritten ist kein Raster aus drei gleichen Karten, sondern eine Strecke, ein Pfad oder eine Zeitleiste mit sichtbarer Verbindung zwischen den Schritten und großen Nummern, gern mit einem Element, das sich beim Scrollen füllt.
+- **Keine leeren Abschnitte.** Ein Abschnitt mit wenig Text bekommt eine Form, die ihn trägt: eine Grafik oder ein Bild daneben, eine groß gesetzte Aussage, ein Layout über die volle Breite. Wirkt er trotzdem leer, wird er mit einem anderen zusammengelegt.
+- **Bewegung mit Zweck.** Einblenden beim Scrollen, Zahlen, die hochzählen, ein Ablauf, der sich aufbaut, Hover-Zustände an allem, was klickbar ist. Ruhig und schnell.
+
+Das ersetzt nicht die Richtung aus Phase 4, es setzt sie konsequent um: alles in deren Farben, Materialien und Formen, und die Regeln von impeccable gelten weiter.
+
+Bevor es in Phase 6 geht, jeden Abschnitt einmal im Screenshot ansehen, auf Desktop und Handy: Wirkt er leer, flach oder trocken? Dann jetzt nachbessern, nicht erst, wenn die Person es sagt.
+
 ## Worauf es beim Bauen ankommt
 
 - Kleine Etiketten über Überschriften („UNSERE LEISTUNGEN“) sind verboten. Sie sind eines der stärksten KI-Signale.
@@ -51,6 +66,7 @@ Lokal ansehen: `python -m http.server 8000` im Projektordner, dann `http://local
 - [ ] Alle Abschnitte aus `texte.md` sind gebaut, keine Platzhalter.
 - [ ] Formular prüft Eingaben und zeigt eine Bestätigung.
 - [ ] Strukturierte Daten im Kopf der Seite.
+- [ ] Mehrere Abschnitte farblich abgesetzt, Abläufe als Grafik, kein Abschnitt wirkt leer oder trocken.
 - [ ] Seite läuft lokal auf Desktop und Handy-Breite.
 
 Keine eigene Abnahme durch die Person hier. Die kommt nach der Prüfung in Phase 6, damit sie keine halbfertige Seite bewerten muss.

@@ -7,7 +7,7 @@ Jede Seite hat ihre eigene Sprache, und die gibt die Person vor. Diese Regeln le
 - **Konkret statt groß.** „Wir schauen uns an, wo in Ihrem Betrieb Zeit verloren geht“ statt „Wir revolutionieren Ihre Prozesse“.
 - **Buttons sagen, was passiert:** „Zusammenarbeit anfragen“, „Termin wählen“, nicht „Jetzt starten“.
 - **Eine Aussage pro Satz.** Kurze Sätze, aber nicht abgehackt.
-- **Nichts erfinden.** Keine Zahlen, Zitate, Auszeichnungen oder Quellen, die die Person nicht geliefert hat. Fehlt ein Fakt, wird er als offene Frage gesammelt.
+- **Nichts erfinden.** Keine Zahlen, Zitate, Auszeichnungen oder Quellen, die die Person nicht geliefert hat. Auch keine Zusagen in ihrem Namen, etwa „Ich melde mich innerhalb von zwei Werktagen“ oder „kostenlos und unverbindlich“. Fehlt ein Fakt, wird er als offene Frage gesammelt.
 - **Wörtliche Vorgaben der Person** werden wörtlich übernommen.
 
 ## Muster, die nach KI klingen
