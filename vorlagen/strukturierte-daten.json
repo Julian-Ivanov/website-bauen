@@ -1,0 +1,59 @@
+{
+  "_hinweis": "Als <script type=\"application/ld+json\"> in den <head> der Startseite. Diesen _hinweis-Eintrag entfernen. Nur echte Fakten aus PRODUCT.md und texte.md eintragen, nicht genutzte Felder löschen. Prüfen mit dem Google Rich Results Test.",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://DOMAIN.DE/#person",
+      "name": "Vorname Nachname",
+      "jobTitle": "Berufsbezeichnung",
+      "url": "https://DOMAIN.DE/",
+      "image": "https://DOMAIN.DE/assets/img/portraet.jpg",
+      "worksFor": { "@id": "https://DOMAIN.DE/#business" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Hochschule" },
+      "knowsAbout": ["Thema 1", "Thema 2", "Thema 3"],
+      "sameAs": [
+        "https://www.linkedin.com/in/...",
+        "https://www.youtube.com/@...",
+        "https://www.instagram.com/..."
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://DOMAIN.DE/#business",
+      "name": "Name der Marke",
+      "url": "https://DOMAIN.DE/",
+      "logo": "https://DOMAIN.DE/assets/img/logo.svg",
+      "image": "https://DOMAIN.DE/assets/img/og-image.png",
+      "description": "Ein Faktensatz: was, für wen, wo.",
+      "founder": { "@id": "https://DOMAIN.DE/#person" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Stadt",
+        "addressCountry": "DE"
+      },
+      "areaServed": { "@type": "Country", "name": "Deutschland" },
+      "email": "kontakt@DOMAIN.DE",
+      "knowsLanguage": "de",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Leistungen",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Leistung 1", "description": "Was genau." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Leistung 2", "description": "Was genau." } }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://DOMAIN.DE/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Frage genau wie auf der Seite?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Antwort genau wie auf der Seite." }
+        }
+      ]
+    }
+  ]
+}

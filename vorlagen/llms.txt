@@ -1,0 +1,29 @@
+# NAME DER MARKE
+
+> Ein Satz: wer, was, für wen. Beispiel: „Muster Studio ist die Fotografie von Anna Muster. Sie fotografiert Hochzeiten und Firmenporträts in Norddeutschland.“
+
+Zwei bis drei Absätze in Faktensätzen. Ein Fakt pro Satz, keine Werbesprache. Wer steckt dahinter, Sitz, Einsatzgebiet, Ausbildung, belegbare Erfahrung (mit Quelle), Reichweite.
+
+## Leistungen
+
+- Leistung 1: was genau, für wen.
+- Leistung 2: was genau, für wen.
+- Leistung 3: was genau, für wen.
+
+## Arbeitsweise
+
+Ablauf einer Zusammenarbeit:
+
+1. Erster Schritt (zum Beispiel Anfrage über das Formular)
+2. Zweiter Schritt (zum Beispiel kostenloses Erstgespräch, rund 30 Minuten)
+3. Dritter Schritt
+4. Vierter Schritt
+
+Für wen das Angebot passt und für wen nicht. Wie Preise entstehen (ohne Zahlen, wenn keine auf der Seite stehen).
+
+## Links
+
+- [Website und Anfrage](https://DOMAIN.DE/)
+- [Profil 1](https://...)
+- [Profil 2](https://...)
+- [Impressum](https://DOMAIN.DE/impressum.html)

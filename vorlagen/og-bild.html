@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Vorschaubild</title>
+<!-- Vorschaubild 1200 × 630 für LinkedIn, WhatsApp, Slack und Co.
+     1. In den Ordner tweak/ des Projekts kopieren (wird nicht hochgeladen).
+     2. Farben, Schriften, Logo und Texte an die Seite anpassen. Das Stylesheet der Seite
+        einbinden, damit Schriften und Variablen stimmen.
+     3. Fotografieren:
+        python -c "from playwright.sync_api import sync_playwright as p; b=p().start().chromium.launch(); pg=b.new_page(viewport={'width':1200,'height':630}); pg.goto('http://localhost:8000/tweak/og-bild.html'); pg.wait_for_timeout(800); pg.screenshot(path='assets/img/og-image.png'); b.close()"
+     4. Im <head> der Seite: og:image und twitter:image mit absoluter Adresse. -->
+<link rel="stylesheet" href="../assets/css/site.css">
+<style>
+  :root { --og-main: #1F2A44; --og-accent: #E4572E; --og-bg: #ffffff; --og-soft: #C9CFDC; }
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; background: var(--og-bg); }
+  .og { position: relative; width: 1200px; height: 630px; box-sizing: border-box; padding: 72px 80px; }
+  .og img.logo { height: 44px; width: auto; }
+  .og h1 { margin: 56px 0 0; max-width: 16ch; font-size: 68px; line-height: 1.02; letter-spacing: -.03em; color: var(--og-main); }
+  .og h1 em { font-style: normal; color: var(--og-accent); }
+  .og .band { position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: var(--og-main); color: #fff;
+    display: flex; align-items: center; padding: 0 80px; font-size: 26px; font-weight: 500; }
+  .og .band span { color: var(--og-soft); margin-left: .5em; }
+  /* Rechts ist Platz für das Hauptmotiv der Seite (Foto, Grafik, Zeichen aus dem Logo) */
+  .og .motif { position: absolute; right: 80px; top: 72px; height: 380px; width: auto; }
+</style>
+</head>
+<body>
+<div class="og">
+  <img class="logo" src="../assets/img/logo.svg" alt="">
+  <h1>Headline der Seite mit <em>Akzentwort</em>.</h1>
+  <!-- <img class="motif" src="../assets/img/motiv.png" alt=""> -->
+  <div class="band">Leistung für Zielgruppe <span>· Name · domain.de</span></div>
+</div>
+</body>
+</html>
