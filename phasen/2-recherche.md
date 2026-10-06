@@ -79,14 +79,15 @@ Ergebnis in `recherche/wettbewerber.md`, mit zwei Teilen. Beide sind die Grundla
 
 So arbeiten SEO-Agenturen: Wer ohne Anzeigen für die eigene Leistung ganz oben steht, macht bei Begriffen, Themen und Aufbau offenbar vieles richtig. Das wird gelesen und ausgewertet.
 
-1. Aus Abfrage 2 die drei bestplatzierten Seiten echter Anbieter nehmen, für die zwei wichtigsten Begriffe der Keyword-Tabelle. Anzeigen, Verzeichnisse, Portale, Vergleichsseiten und Wikipedia zählen nicht, die ranken aus anderen Gründen.
-2. Jede Seite komplett lesen (Seite abrufen oder mit Playwright öffnen) und festhalten:
+1. **Nischen-Begriffe wählen, nicht die größten.** Für Abfrage 2 die zwei Begriffe nehmen, die genau das Angebot beschreiben, also Leistung plus Zielgruppe oder Leistung plus Ort (zum Beispiel „KI für Handwerksbetriebe“ statt „KI Beratung“), auch wenn sie weniger Suchvolumen haben. Allgemeine Begriffe liefern allgemeine Anbieter, die für die eigene Seite keine Vorbilder sind. Die zwei Begriffe vor der Abfrage der Person nennen und bestätigen lassen.
+2. **Nur echte Wettbewerber.** Aus den Ergebnissen die drei bestplatzierten Seiten nehmen, die dieselbe Leistung für dieselbe Zielgruppe anbieten. Anzeigen, Verzeichnisse, Portale, Vergleichsseiten, Ratgeber-Artikel von Verlagen und Wikipedia zählen nicht, die ranken aus anderen Gründen. Sind unter den ersten zehn keine drei passenden Anbieter, den nächsten Nischen-Begriff abfragen. Die Auswahl der Person kurz zeigen, bevor die Seiten gelesen werden.
+3. Jede Seite komplett lesen (Seite abrufen oder mit Playwright öffnen) und festhalten:
 
 | Seite | Position bei welchem Begriff | Seitentitel | Meta-Beschreibung | H1 | Gliederung der H2 | Wo steht der Hauptbegriff | Varianten und verwandte Begriffe | Themen und Fragen, die behandelt werden | Textumfang (Wörter) | FAQ | strukturierte Daten |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 
-3. Dazu aus Abfrage 4 die Begriffe, für die die drei Seiten ranken.
-4. Darunter auswerten:
+4. Dazu aus Abfrage 4 die Begriffe, für die die drei Seiten ranken. Nur Begriffe behalten, die zum eigenen Angebot passen. Was die Seiten mit anderen Leistungen oder Themen holen, fällt raus.
+5. Darunter auswerten:
    - **Gemeinsamkeiten:** Welche Themen, Fragen und Begriffe haben alle drei? Das erwartet Google zu diesem Suchbegriff offenbar, die eigene Seite braucht sie auch.
    - **Lücken:** Was beantwortet keine der drei, obwohl es in „Ähnliche Fragen“, in den ChatGPT-Antworten oder in der Keyword-Tabelle auftaucht? Dort kann die eigene Seite besser sein.
    - **Aufbau:** Wie viele Abschnitte, wo steht der Hauptbegriff (Titel, H1, erste H2), wie lang ist der Text ungefähr. Das ergibt den Rahmen für Phase 3. Mehr Text ist kein Ziel an sich.
