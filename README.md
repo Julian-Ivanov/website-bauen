@@ -34,7 +34,7 @@ In anderen Agenten schreibst du einfach: „Starte den Skill website-bauen.“
 
 - einen KI-Agenten wie Claude Code oder Codex
 - impeccable, ein kostenloses Design-Plugin. Der Skill richtet es am Anfang mit dir ein.
-- Für die Recherche ein Konto bei DataForSEO, für den Livegang ein Webhosting. Beides richtet der Skill erst in der Phase ein, in der es gebraucht wird.
+- Für die Recherche ein Konto bei DataForSEO, für den Livegang ein Webhosting. Beides richtet der Skill erst in der Phase ein, in der es gebraucht wird. Über [meinen Link](https://l.dataforseo.com/4yfnJzk) bekommst du bei DataForSEO 5 Dollar Startguthaben statt einem (Affiliate-Link, für dich ohne Mehrkosten).
 
 ## Weitermachen und aktualisieren
 
